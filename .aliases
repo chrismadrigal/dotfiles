@@ -31,6 +31,7 @@ alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
 alias la="ls -laF ${colorflag}"
+alias ll="ls -laF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -154,3 +155,42 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# Source bash profile.
+alias src="source ~/.bash_profile"
+
+# Node Js Relate stuff
+alias psnode="ps aux | grep 'node '"
+alias npmls="npm list -g --depth=0"
+
+# Fix “No Camera Available” Issue in Mac OS X
+# https://www.maketecheasier.com/no-camera-available-mac-os-x/
+alias killcam='sudo killall VDCAssistant'
+
+#Git commands. Maybe move to gitconfig?
+alias st='git status'
+alias gc='git commit -m'
+alias gl='git log'
+alias gd='git diff'
+alias gb='git branch'
+alias gi='git init'
+alias gcm='git checkout master'
+alias ga='git add'
+alias gaa='git add --all'
+alias gp='git pull --rebase'
+alias gclean='git clean -f'
+alias checkout="git checkout"
+alias stash="git stash"
+alias pop="git stash pop"
+
+
+alias build="npm run build"
+alias deploy="npm run deploy -- --env prd --s3 prd"
+alias deployPrdNew="npm run deploy -- --env prdnew --s3 prdnew"
+alias deploys1="npm run deploy -- --env stg1 --s3 stg1"
+alias deploys5="npm run deploy -- --env stg5 --s3 stg5"
+alias deploydev="npm run deploy -- --env dev --s3 dev"
+alias deploycss="npm run deploy:css -- --env prd --s3 prd"

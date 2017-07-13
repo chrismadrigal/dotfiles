@@ -1,3 +1,7 @@
+
+# Shell Tricks
+# http://brettterpstra.com/2015/07/09/shell-tricks-inputrc-binding-fun/
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
