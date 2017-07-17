@@ -170,6 +170,9 @@ alias npmls="npm list -g --depth=0"
 # https://www.maketecheasier.com/no-camera-available-mac-os-x/
 alias killcam='sudo killall VDCAssistant'
 
+
+alias jp='jump'
+
 #Git commands. Maybe move to gitconfig?
 alias st='git status'
 alias gc='git commit -m'
