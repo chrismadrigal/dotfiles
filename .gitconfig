@@ -184,3 +184,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = chrismadrigal
+	email = crismas07@gmail.com
