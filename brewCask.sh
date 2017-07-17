@@ -26,6 +26,7 @@ brew cask install flux
 # dev
 brew cask install iterm2
 brew cask install atom
+brew cask install chefdk
 brew cask install sequel-pro
 brew cask install virtualbox
 brew cask install viscosity
