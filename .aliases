@@ -139,3 +139,10 @@ alias pop="git stash pop"
 # Edit files with Atom
 alias edit="atom"
 alias aliases="edit ~/.aliases"
+
+# Ruby aliases
+alias rubyi="rbenv install"
+alias rubyls="rbenv install -l"
+alias rubyvs="rbenv versions"
+alias rubyv="rbenv version"
+alias setRuby="rbenv global 2.5.0"
