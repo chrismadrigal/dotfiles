@@ -15,24 +15,19 @@ brew install bash
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
+
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/bash;
 fi;
 
-# Install `wget` with IRI support.
-#
-brew install wget --with-iri
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
-brew install openssh
+# brew install openssh
 
 # Install other useful binaries.
 brew install git
-brew install git-lfs
-brew install node
 brew install tig
 brew install tree
 
